@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    padding: 5px;
+    display: grid;
+    gap:5px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+
+
+
+
+.header {
+    background-color: #ffffff;
+    gap: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2 / 3;
+    grid-row:1 / 2;
+}
+
+.top{
+    border: black 2px solid;
+    padding: 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+.topRight{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+.bottom{
+    border: black 2px solid; 
+    padding: 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.bottomButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+    background-color: #1992d4;
+    color: #ffffff;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    grid-template-rows: 1fr 9fr;
+}
+
+.home {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr 2fr;
+}
+
+.home .sidebar-text{
+    font-size: 36px;
+    display: flex;
+    justify-self: flex-start;
+    color: white;
+}
+
+.home #icon {
+    height: 3em;
+    width: 3em;
+    filter: invert(96%) sepia(4%) saturate(17%) hue-rotate(179deg) brightness(105%) contrast(107%);
+}
+
+.options {
+    display: grid;
+    grid-template-rows: 33% 66%;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sidebarMid{
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.sidebarBot{
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.sidebarMid #item,
+.sidebarBot #item {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sidebarMid .sidebar-text,
+.sidebarBot .sidebar-text {
+    display: flex;
+    justify-self: flex-start;
+    font-size: 26px;
+}
+
+.sidebarMid #icon,
+.sidebarBot #icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 2em;
+    width: 2em;
+    filter: invert(96%) sepia(4%) saturate(17%) hue-rotate(179deg) brightness(105%) contrast(107%);
+}
+
+
+
+
+
+.main-content {
+    background-color: #e2e8f0;
+
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 25px 1fr;
+}
+
+.projects{
+    border:blue solid 2px;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+}
+
+.card{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+
+    margin: 15px;
+    text-align: left;
+    box-shadow: 5px 5px 5px lightblue;
+    border-left: #f0b429 7px solid;
+    border-radius: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card h3{
+    display: flex;
+    align-self: center;
+
+    grid-column: 1 / 9;
+    grid-row: 1 / 2;
+}
+
+.card p{
+    display: flex;
+    grid-column: 1/9;
+    grid-row: 2/3;
+}
+
+.projectIcons{
+    display: flex;
+    grid-column: 5 / 8;
+    grid-row: 3 / 4;
+}
+
+#proj-icon{
+    width: 30px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+.projectsRight{
+    border: blue 2px solid;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    grid-template-rows: 25px 2fr 25px 1fr;
+    gap: 5px;
+}
+
+.announcements{
+    display: grid;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightblue;
+    border-radius: 3%;
+    grid-row: 2/3;
+}
+
+.trending {
+    display: grid;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightblue;
+    border-radius: 3%;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row: 4/5;
+}
+
+.tweet {
+    display: grid;
+    grid-column: 1 / 3;
+
+}
+
+.pic{
+    display: grid;
+    grid-column: 1/2;
+}
+
+.tweet-content{
+    display: grid;
+    grid-column: 2/3;
+}
